@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+*, *:before, *:after{
+	box-sizing: border-box;
+	margin:0px;
+    padding:0px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+body{
+    min-height: 100vh;
+    max-width: 60rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: Montserrat;
+    padding: 0 1rem;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem 0 1rem 0;
+
+}
+
+
+
+
+.basket{
+    background: #F2F2F2;
+    border-radius: 12px;
+    padding:1rem; 
+    margin: 1rem 0;
+    
+}
+.basket h1{
+    
+    font-size: .9rem;
+}
+.basket .article{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+   margin: 2rem 0;
+}
+
+
+.basket .article img{
+    border-radius: 10px;
+}
+
+.basket .article .data span{
+    margin-right: 1rem
+}
+.basket .article .resume span:first-child{
+    color: #F2994A;
+}
+.basket .article .data span:last-child{
+    text-decoration: line-through;
+}
+.basket .article .data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.basket .article .counter{
+    border: 1px solid #828282;
+    height: 49.86px;
+    border-radius: 12px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+.basket .article .counter span{
+    display: block;
+    min-width: 1.5rem;
+    margin: .5rem;
+    padding: .2rem .4rem;
+    text-align: center;
+}
+.basket .article .counter span:nth-child(1),
+.basket .article .counter span:nth-child(3){
+ 
+    background: #E0E0E0;
+    border-radius: 4px;
+
+}
+.basket .result div{
+    padding: .5rem;
+    border-top: 1px solid #BDBDBD;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+form{
+    padding: 0rem ;
+    display: flex;
+    flex-direction: column;
+}
+form h1{
+    font-size: 1rem;
+}
+
+input, label{
+    display: inline-block;
+    
+
+}
+
+input, select, textarea {
+    font-size: 1rem;
+}
+form .contact{
+    margin: 1rem 0;
+}
+form .input-label-container{
+    margin: 1rem 0;
+}
+form .input-container{
+    height: 40.56px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+
+.country-postal-code{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+form input{
+    border: none;
+    background: none;
+    outline: none;
+    height: 2rem;
+    background-color: transparent;
+    width: 100%;
+    padding: 0 0 0 1rem;
+    
+    
+    
+}
+
+form input::placeholder{
+    font-family: Montserrat;
+   
+}
+
+form .checkbox{
+    border: none;
+    padding: 0;
+
+}
+form .checkbox input{
+    width: auto;
+    margin-right: 1rem ;
+    
+}
+
+form .submit{
+    width: 166px;
+    height: 54px;
+    background: #F2994A;
+    border-radius: 12px;
+    align-self: flex-end;
+    
+}
+
+
+
+footer{
+    margin: 2rem 0;
+    text-align: center;
+    font-size: .9rem;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+
+@media all and (min-width:768px){
+    
+    main{
+       display: flex;
+       flex-direction: row-reverse;
+       justify-content: space-between;
+       margin-top: 2rem;
+      
+   }
+   .basket{
+        height: fit-content;
+        height: auto;
+        width: 24rem;
+        height: 34rem;
+        flex: none;
+   }
+  
+   input, select, textarea {
+        font-size: .8rem;
+    }
+   
+   
+   
+}
+
+
