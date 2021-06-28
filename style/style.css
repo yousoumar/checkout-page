@@ -193,7 +193,7 @@ footer a{
 }
 
 
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
     
     main{
        display: flex;
